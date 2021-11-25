@@ -5,14 +5,14 @@ This is a tic tac toe game built in Python. Nothing except standard libraries we
 
 - Board + rendering done.
 - Storing moves per player in the right squares.
-- Welcome mixin for more interactie experience
+- Welcome mixin for more interactive experience
 - Validation of moves and inputs.
 - Detection of simple win condition (row)
 - Score saving
 
 Still todo:
 
-- Support for more complex win conditions
+- Support for more complex win conditions (column and diagonals)
 - Replay functionality
 - Rewards from file.
 - Improvements on code structure
