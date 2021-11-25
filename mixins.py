@@ -46,8 +46,7 @@ class WelcomeMixin:
                 self._players.append(second_player)
                 print("Someone else has selected a symbol first.")
                 print(
-                    f"{second_player.name} is stuck with \
-                    {second_player.symbol}"
+                    f"{second_player.name} received {second_player.symbol}"
                 )
             time.sleep(2)
 

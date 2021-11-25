@@ -97,7 +97,7 @@ class TicTacToeBoard:
             3: '.X..X..X.',
             5: '..X..X..X',
             2: 'O..O..O..',
-            4: '.O..O.O..',
+            4: '.O..O..O.',
             6: '..O..O..O',
         }
         win = False
