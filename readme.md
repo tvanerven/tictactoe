@@ -1,6 +1,12 @@
 # Introduction
 This is a tic tac toe game built in Python. Nothing except standard libraries were used. It was built in roughly 6 hours.
 
+# Getting it running
+
+- Clone the project (such as by `git@github.com:tvanerven/tictactoe.git`)
+- Navigate to directory
+- `python game.py`
+
 # State of work after ~3 hours
 
 - Board + rendering done.
@@ -41,3 +47,4 @@ Still todo:
 - Keyboard navigation across the board.
 - Moving all strings into a mixin and get them from there. This would improve code readability, but would be obstructive when debugging.
 - Improving testing.
+- Fancy pixel art. Just because we only have characters, doesn't mean we can't have stuff to draw the eye.
