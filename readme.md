@@ -22,14 +22,15 @@ Still todo:
 
 - I feel that, first of all, a game should be interactive and fun. This is why I spent more time (and likely prioritized wrongly) on the WelcomeMixin. However, I do feel it adds in terms of value to the player - there is suddenly a reward when playing, and the program handles humanized inputs and outputs as well as various conditions. I do not regret building this.
 - Validation (both of win conditions and inputs) is relatively hardcoded. I feel I could've made this more dynamic with more time, but that is not within scope of this assignment.
-- I wanted to get out there and showcase familiarity with different libraries in Python rather than stick to one style. As a result, the code style may appear fragmented, but it's more of a showcase than production code.
+- I wanted to get out there and showcase familiarity with different builtin libraries in Python rather than stick to one style. As a result, the code style may appear fragmented, but it's more of a showcase than production code.
 - Ideally, I wanted to keep it simple in terms of libraries used.
 
 # Pitfalls
 
-- My first consideration was building in directional controls to navigate the board (up, down, left, right, and mark). This turned out to be a false trail - you suddenly have to track the selected square, sanitize direction based from there, and validate different inputs. This wasn't as easy as I expected it to be, but it did yield me the idea of using dictionaries for Squares.
+- My first consideration was building in directional controls to navigate the board (up, down, left, right, and mark). This turned out to be a false trail - you suddenly have to track the selected square, sanitize direction based from there, and validate different inputs. This wasn't as easy as I expected it to be, but it did yield me the idea of using dictionaries for Squares, which allowed me to scrap a large amount of code down the road.
 - Second consideration was the validation. I attempted (first) to work with a dynamic sized board, but after noticing that my dynamic navigation didn't go anywhere fast, I passed up this idea. Code-wise, it's doable (and I have some idea on how to approach this), but simply would require more time.
-- Last consideration was the inclusion of an extensive easter egg in the form of a text-based game, such as Zork. I know, massive pitfall and not conductive to finishing. I compromised here by simply embedding the Way of Mrs. Cosmopolite from Discword from sir Terry Pratchett's excellent _Thief of Time_. 
+- Third consideration was the inclusion of an extensive easter egg in the form of a text-based game, such as Zork. I know, massive pitfall and not conductive to finishing. I compromised here by simply embedding the Way of Mrs. Cosmopolite from Discword from sir Terry Pratchett's excellent _Thief of Time_. 
+- Last consideration was testing. I considered various options; unittest and PyTest (preferred), but it would take rewriting code, and a fair amount of trial and error to implement both nicely. I ultimately decided to test by hand, which took about an hour and performed satisfactorily. As a result, I wouldn't run this on production, but that was not the objective.
 
 # Other thoughts/possible improvements
 
@@ -39,3 +40,4 @@ Still todo:
 - Grouping Square objects into Rows and Columns to handle victory checks more gracefully.
 - Keyboard navigation across the board.
 - Moving all strings into a mixin and get them from there. This would improve code readability, but would be obstructive when debugging.
+- Improving testing.
